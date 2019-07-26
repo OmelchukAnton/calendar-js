@@ -1,6 +1,7 @@
 import { showCalendar } from './ShowCalendar.js';
 import { setLocalStorage } from './service.js';
 import { deleteClass, closeQuickAddEvent, closeAddEventForm } from './actions.js';
+import '../style/app.css';
 
 const today = new Date();
 let currentMonth = today.getMonth();

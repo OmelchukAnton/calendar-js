@@ -4,7 +4,6 @@ module.exports = {
   output: {
     path: __dirname + '/dist', // Folder to store generated bundle
     filename: 'bundle.js',  // Name of generated bundle after build
-    publicPath: '/' // public URL of the output directory when referenced in a browser
   },
   module: {  // where we defined file patterns and their loaders
       rules: [ 
@@ -14,10 +13,11 @@ module.exports = {
       new HtmlWebpackPlugin({
           template: __dirname + "/src/public/index.html",
           inject: 'body'
-      })
+      }),
   ],
+
   devServer: {  // configuration for webpack-dev-server
-      contentBase: './src/public',  //source of static assets
+      contentBase: './src/',  //source of static assets
       port: 7700, // port to run dev-server
   },
 
@@ -33,8 +33,11 @@ module.exports = {
       ],
       rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader'
+          ]
       },
     ],
   }
