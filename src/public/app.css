@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.calendar-header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 5% 5% 2% 5% ;
+	background-color: #F0F0F0;
+}
+
+.add-event, .update-event {
+	background-color: #406ec4;
+	color: #fff;
+	font-size: 0.9em;
+	border-radius: 2px;
+	border: 0;
+	padding: 4px 10px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.switch-month {
+	margin: 1% 5%;
+	display: inline-flex;
+}
+
+.btn-previous, .btn-next, .btn-today, .name-month {
+	margin-right: 5px;
+	background-color: #fff;
+	padding: 0px 2px;
+	box-shadow: 1px;
+	border-radius: 4px;
+}
+
+.btn-today {
+	margin-left: 10px;
+}
+
+.calendar-view {
+	margin: 0 5%;
+}
+
+table {
+  	border-collapse: collapse;
+}
+
+table, td, th {
+  	border: 1px solid #F0F0F0;
+}
+
+table {
+  	table-layout: fixed;
+}
+
+.search-event input {
+	padding: 4px 10px;
+}
+
+.search-event::before {
+	padding-right: 3px;
+	content: "\1F50D";
+}
+
+#calendar-body td {
+	vertical-align: top;
+	padding: 3px;
+	height: 15vh;
+}
+
+#calendar {
+	width: 100%;
+}
+
+.today {
+	color: black;
+	background-color: #F0F0F0;
+}
+
+.form-add-event__popup {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	box-shadow:  0 0 5px rgba(0,0,0,.4);
+}
+
+.selected {
+	background: #dcf7ff;
+	border: 1px solid #bce8f1;
+}
+
+.form-add-event__fields {
+	margin: 20px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn-close-form {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 15px;
+	float: right;
+	border: 0;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.btn-create {
+	margin-top: 5px;
+}
+
+.input-group input {
+	width: 230px;
+	padding: 3px;
+	border-top-style: groove;
+	border-left: 2px solid #F0F0F0;
+}
+
+.input-group textarea {
+	padding: 3px;
+	border-left: 2px solid #F0F0F0;
+	border-bottom: 2px solid #F0F0F0;
+	border-right: 2px solid #F0F0F0;
+
+}
+
+.input-group input:nth-child(1), .input-group input:nth-child(2) {
+	margin-bottom: 5px;
+}
+
+textarea {
+	white-space: normal; 
+	height: 100px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.form-btn-group button {
+	border: 0;
+	box-shadow:  0 0 2px rgba(0,0,0,5);
+	background-image: linear-gradient(#fff, #ededed);
+	font-weight: bold;
+	padding: 2px 4px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.form-btn-group button:nth-child(1) {
+	margin-right: 10px;
+}
+
+ .form-add-event {
+	margin: 0 5%;
+	max-width: 200px;
+  	background-color: white;
+}
+
+.event-container {
+    border: 1px solid #6fbd99;
+    background-color: blue;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+}
+
